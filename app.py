@@ -1,6 +1,8 @@
-import streamlit as st
-from khin_yi_module.ssism_cttm_v4.1 import SSISMCttmTruthEngine
-
+import streamlit
+import sys
+import os
+sys.path.append(os.path.abspath("khin_yi_module"))
+from ssism_cttm_v4.1 import SSISMCttmTruthEngine
 st.set_page_config(page_title="SS'ISM CTTM AI for Justice v4.1", layout="wide")
 
 engine = SSISMCttmTruthEngine()
