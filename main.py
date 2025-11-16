@@ -6,7 +6,7 @@ import sys
 import os
 if 'khin_yi_module' not in sys.path:
     sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'khin_yi_module'))
-from ssism_cttm_v4.1 import SSISMCttmTruthEngine
+import SSISMCttmTruthEngine
 # === KHIN YI EXPOSÉ DASHBOARD ===
 khin_engine = SSISMCttmTruthEngine()
 khin_engine.dashboard()
